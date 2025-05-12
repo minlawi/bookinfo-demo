@@ -71,10 +71,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-details
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: details
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/details-v1:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-details-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -124,10 +124,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-ratings
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: ratings
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/ratings-v1:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-ratings-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -177,10 +177,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-reviews
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: reviews
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/reviews-v1:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-reviews-v1:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -219,10 +219,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-reviews
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: reviews
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/reviews-v2:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-reviews-v2:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -261,10 +261,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-reviews
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: reviews
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/reviews-v3:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-reviews-v3:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -331,10 +331,10 @@ spec:
     spec:
       serviceAccountName: bookinfo-productpage
       imagePullSecrets:
-      - name: ecr-secret
+      - name: jfrog-secret
       containers:
       - name: productpage
-        image: 571600835849.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/productpage-v1:1.20.3
+        image: trialykwa7u.jfrog.io/lawi-docker-local/bookinfo-productpage-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
